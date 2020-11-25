@@ -1,0 +1,139 @@
+table tbody tr td  { 
+    white-space: nowrap!important; 
+    max-width: 15px!important; 
+    overflow: hidden!important;
+    text-overflow: ellipsis!important;
+    cursor: pointer;
+}
+.table tbody tr:hover { 
+    background-color: #1e1e1e!important;
+}
+.custom-model { 
+    width: 100%!important;
+    height: 100%!important;
+    background-color: rgba(0,0,0,0.4); 
+    position: absolute;
+    top: 0;
+    left: 0;overflow: hidden; 
+    display: none;
+}
+.custom-model-content { 
+    background-color: #fff;
+    padding: 20px;
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    border: 5px solid #1e1e1e;
+    animation-name: custom-anime;
+    animation-duration: .3s;
+
+}
+@keyframes custom-anime {
+    from { right: -83.666%;}
+    to { right: 0%;}
+}
+#updateData,
+#saveData,
+#deleteData {
+    display: block;
+}
+.custom-model-content label {
+    font-weight: bold;
+}
+.custom-button {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(230, 220, 220);
+    margin-top: 30%;
+    border: 1px solid #000;
+    cursor: pointer;
+    transition: .3s;
+    border-radius: 10px;
+}
+.custom-button a {
+    text-decoration: none;
+    color: #000;
+ }
+.custom-button:hover { 
+    background-color: rgb(173, 169, 169);
+    border: 1px solid rgb(61, 60, 60);
+    box-shadow: 5px 10px 5px #000;
+}
+.img-book { 
+    margin-top: 10px;
+    margin-bottom: 15px;
+    width: 120px;
+    height: 120px;
+    background-image: url(../images/book.svg);
+}
+.custom-button:hover .img-book {
+    background-image: url(../images/bookh.svg);
+}
+.img-author { 
+    margin-top: 10px;
+    margin-bottom: 15px;
+    width: 120px;
+    height: 120px;
+    background-image: url(../images/writer.svg);
+    background-size: cover;
+}
+.custom-button:hover .img-author {
+    background-image: url(../images/writerh.svg);
+}
+.img-publisher { 
+    margin-top: 10px;
+    margin-bottom: 15px;
+    width: 120px;
+    height: 120px;
+    background-image: url(../images/publisher.svg);
+    background-size: cover;
+}
+.custom-button:hover .img-publisher {
+    background-image: url(../images/publisherh.svg);
+}
+.img-role { 
+    margin-top: 10px;
+    margin-bottom: 15px;
+    width: 120px;
+    height: 120px;
+    background-image: url(../images/roleh.svg);
+    background-size: cover;
+}
+.custom-button:hover .img-role {
+    background-image: url(../images/role.svg);
+}
+.img-users { 
+    margin-top: 10px;
+    margin-bottom: 15px;
+    width: 120px;
+    height: 120px;
+    background-image: url(../images/users.svg);
+    background-size: cover;
+}
+.custom-button:hover .img-users {
+    background-image: url(../images/usersh.svg);
+}
+.img-exit { 
+    margin-top: 10px;
+    margin-bottom: 15px;
+    width: 120px;
+    height: 120px;
+    background-image: url(../images/exit.svg);
+    background-size: cover;
+}
+.custom-button:hover .img-exit {
+    background-image: url(../images/exith.svg);
+}
+.img-search { 
+    margin-top: 10px;
+    margin-bottom: 15px;
+    width: 120px;
+    height: 120px;
+    background-image: url(../images/search.svg);
+    background-size: cover;
+}
+.custom-button:hover .img-search {
+    background-image: url(../images/searchh.svg);
+}

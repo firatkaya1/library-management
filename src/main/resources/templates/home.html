@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.springframework.org/security/tags">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/custom.css">
+    <title>Bookstore | Main</title>
+</head>
+<style>
+   
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand font-weight-bold" th:href="@{/home}" >BOOKSTORE
+            <span class="text-danger" th:text="${role}"></span>
+            [<span class="text-success" th:text="${name}"></span>]
+
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <span class="mr-auto"></span>
+            <ul class="navbar-nav ">
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/publisher}" >Add Publisher</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" th:href="@{/author}">Add Author </a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" th:href="@{/book}">Add Book </a>
+                </li>
+                <li class="nav-item " sec:authorize="hasRole('ROLE_ADMIN')">
+                    <a class="nav-link" th:href="@{/users}">See Users </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/logout}">Exit</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="custom-button text-center">
+                    <a th:href="@{/publisher}">
+                        <div class="img-publisher mx-auto"></div>
+                        <div class="w-100"></div>
+                        <span class="font-weight-bold h5">Add Publisher</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4" >
+                <div class="custom-button text-center">
+                    <a th:href="@{/author}">
+                        <div class="img-author mx-auto"></div>                        
+                        <div class="w-100"></div>
+                        <span class="font-weight-bold h5">Add Author </span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="custom-button text-center">
+                    <a th:href="@{/book}">
+                        <div class="img-book mx-auto"></div>
+                        <div class="w-100"></div>
+                        <span class="font-weight-bold h5">Add Book</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4" sec:authorize="hasRole('ROLE_ADMIN')">
+                <div class="custom-button text-center">
+                <a th:href="@{/users}">
+                    <div class="img-users mx-auto"></div>
+                    <div class="w-100"></div>
+                    <span class="font-weight-bold h5">See Users</span>
+                </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="custom-button text-center">
+                    <a th:href="@{/logout}">
+                        <div class="img-exit mx-auto"></div>
+                        <div class="w-100"></div>
+                        <span class="font-weight-bold h5">Exit</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+
+</body>
+</html>
