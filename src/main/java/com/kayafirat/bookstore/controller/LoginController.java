@@ -45,7 +45,6 @@ public class LoginController {
     public String home(Model model) {
         model.addAttribute("name",SecurityContextHolder.getContext().getAuthentication().getName());
         model.addAttribute("role",SecurityContextHolder.getContext().getAuthentication().getAuthorities());
-
         return "home";
     }
 
