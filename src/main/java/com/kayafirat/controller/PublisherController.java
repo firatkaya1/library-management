@@ -1,7 +1,7 @@
 package com.kayafirat.controller;
 
 import com.kayafirat.entity.Publisher;
-import com.kayafirat.service.PublisherService;
+import com.kayafirat.service.IPublisherService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -17,7 +17,7 @@ import javax.validation.Valid;
 @RequiredArgsConstructor(onConstructor = @__(@Autowired))
 public class PublisherController {
 
-    private final PublisherService publisherService;
+    private final IPublisherService publisherService;
 
     @GetMapping("/publisher")
     public String book(Model model) {

@@ -2,7 +2,7 @@ package com.kayafirat.service.Impl;
 
 import com.kayafirat.entity.Book;
 import com.kayafirat.repository.BookRepository;
-import com.kayafirat.service.BookService;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -15,10 +15,10 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class IBookService implements BookService {
+@RequiredArgsConstructor(onConstructor = @__(@Autowired))
+public class BookService implements com.kayafirat.service.IBookService {
 
-    @Autowired
-    private BookRepository bookRepository;
+    private final BookRepository bookRepository;
 
     @Override
     public Book addBook(Book book) {

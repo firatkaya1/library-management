@@ -3,7 +3,7 @@ package com.kayafirat.service.Impl;
 import com.kayafirat.entity.User;
 import com.kayafirat.exceptions.UserAlreadyExistsException;
 import com.kayafirat.repository.UserRepository;
-import com.kayafirat.service.UserService;
+import com.kayafirat.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -15,14 +15,14 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class IUserService implements UserService {
+public class UserService implements IUserService {
 
     @Autowired
     UserRepository userRepository;
 
     private final BCryptPasswordEncoder bCryptPasswordEncoder;
 
-    public IUserService(){
+    public UserService(){
         this.bCryptPasswordEncoder = new BCryptPasswordEncoder(BCryptPasswordEncoder.BCryptVersion.$2A,10);
     }
 

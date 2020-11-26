@@ -1,7 +1,7 @@
 package com.kayafirat.controller;
 
 import com.kayafirat.entity.User;
-import com.kayafirat.service.UserService;
+import com.kayafirat.service.IUserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 @RequiredArgsConstructor(onConstructor = @__(@Autowired))
 public class LoginController {
 
-    private final UserService userService;
+    private final IUserService userService;
 
     @GetMapping("/")
     public String redirectLogin() {

@@ -1,6 +1,6 @@
 package com.kayafirat.config;
 
-import com.kayafirat.service.UserService;
+import com.kayafirat.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -15,10 +15,10 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 @EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
-    private final UserService userService;
+    private final IUserService userService;
 
     @Autowired
-    public SecurityConfig(UserService userService) {
+    public SecurityConfig(IUserService userService) {
         this.userService = userService;
     }
     @Override

@@ -2,7 +2,8 @@ package com.kayafirat.service.Impl;
 
 import com.kayafirat.entity.Publisher;
 import com.kayafirat.repository.PublisherRepository;
-import com.kayafirat.service.PublisherService;
+import com.kayafirat.service.IPublisherService;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -10,10 +11,10 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class IPublisherService implements PublisherService {
+@RequiredArgsConstructor(onConstructor = @__(@Autowired))
+public class PublisherService implements IPublisherService {
 
-    @Autowired
-    PublisherRepository publisherRepository;
+    private final PublisherRepository publisherRepository;
 
     @Override
     public Publisher addPublisher(Publisher publisher) {

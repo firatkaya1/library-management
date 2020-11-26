@@ -2,7 +2,8 @@ package com.kayafirat.service.Impl;
 
 import com.kayafirat.entity.Author;
 import com.kayafirat.repository.AuthorRepository;
-import com.kayafirat.service.AuthorService;
+import com.kayafirat.service.IAuthorService;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -10,10 +11,10 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class IAuthorService implements AuthorService {
+@RequiredArgsConstructor(onConstructor = @__(@Autowired))
+public class AuthorService implements IAuthorService {
 
-    @Autowired
-    AuthorRepository authorRepository;
+    private final AuthorRepository authorRepository;
 
     @Override
     public Author addAuthor(Author author) {

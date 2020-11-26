@@ -1,9 +1,9 @@
 package com.kayafirat.controller;
 
 import com.kayafirat.entity.Book;
-import com.kayafirat.service.AuthorService;
-import com.kayafirat.service.BookService;
-import com.kayafirat.service.PublisherService;
+import com.kayafirat.service.IAuthorService;
+import com.kayafirat.service.IBookService;
+import com.kayafirat.service.IPublisherService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -17,17 +17,17 @@ import javax.validation.Valid;
 @RequiredArgsConstructor(onConstructor = @__(@Autowired))
 public class BookController {
 
-    private final BookService bookService;
+    private final IBookService IBookService;
 
-    private final AuthorService authorService;
+    private final IAuthorService IAuthorService;
 
-    private final PublisherService publisherService;
+    private final IPublisherService publisherService;
 
     @GetMapping("/book")
     public String book(Model model) {
-        model.addAttribute("books",bookService.getAllBook());
+        model.addAttribute("books", IBookService.getAllBook());
         model.addAttribute("publishers",publisherService.getAllPublisher());
-        model.addAttribute("authors",authorService.getAllAuthor());
+        model.addAttribute("authors", IAuthorService.getAllAuthor());
         model.addAttribute("b1", new Book());
         model.addAttribute("totalPages",0);
         return "book";
@@ -36,18 +36,18 @@ public class BookController {
     @PostMapping("/book")
     public String bookSave(@ModelAttribute Book b1, Model model) {
         model.addAttribute("b1", b1);
-        bookService.addBook(b1);
+        IBookService.addBook(b1);
         return "redirect:/book";
     }
     @PostMapping("/book/update")
     public String bookUpdate(@Valid @ModelAttribute Book b1, Model model) {
         model.addAttribute("b1", b1);
-        bookService.updateBook(b1);
+        IBookService.updateBook(b1);
         return "redirect:/book";
     }
     @PostMapping("/book/delete/{id}")
     public String bookDelete(@PathVariable Long id){
-        bookService.deleteBook(id);
+        IBookService.deleteBook(id);
         return "redirect:/book";
     }
 
@@ -57,10 +57,10 @@ public class BookController {
                                @RequestParam String keyword,
                                @RequestParam int pageNumber,
                                @RequestParam int pageSize,Model model){
-        Page<Book> bookPage = bookService.searchBook(keyword,pageNumber,pageSize,sortedBy,orderBy);
+        Page<Book> bookPage = IBookService.searchBook(keyword,pageNumber,pageSize,sortedBy,orderBy);
         model.addAttribute("books",bookPage);
         model.addAttribute("publishers",publisherService.getAllPublisher());
-        model.addAttribute("authors",authorService.getAllAuthor());
+        model.addAttribute("authors", IAuthorService.getAllAuthor());
         model.addAttribute("b1", new Book());
         model.addAttribute("totalPages",bookPage.getTotalPages());
         return "book";
