@@ -34,22 +34,25 @@ Projeyi indirdikten sonra projenin bulunduğu klasöre gidin.
 ```
 cd library-management
 ```
-Gerekli dosyaları yükledikten sonra projeyi çalıştırın. Proje https://localhost:8443 portunda açılacaktır.
+Gerekli dosyaları yükledikten sonra projeyi çalıştırın. Proje https://localhost:8443 portunda açılacaktır.Authenticate işlemleri trafiğin HTTPS üzerinden   
+ilerlemesi gerekmektedir. Proje için de hazır bir şekilde sertifika bulunmaktadır. Ek bir konfigürasyon yapılması gerekmemektedir.
 ```
 mvn install && mvn spring-boot:run
 ```
 ### Kullanılan Teknolojiler
 
-Arayüz tarafında HTML,CSS,JS,Bootstrap ve Thymeleaf kullanılmıştır. Arkaplan da ise Spring Boot, Spring Security, Spring JPA, MySQL kullanılmıştır.
+Arayüz tarafında HTML,CSS,JS,Bootstrap ve Thymeleaf kullanılmıştır. Arkaplan da ise Spring Boot, Spring Security, Spring JPA, MySQL kullanılmıştır.Database optimizasyonunu artırabilmek için HikariPool kullanılmıştır.
 
 Aşağıda projenin çalıştırıldıktan sonra 1 dakikalık bir kısa videosu bulunmaktadır. Burada Github hesabı kullanılarak giriş yapılmış, Yazar,yayınevi ve kitap eklenmiştir. Kullanılan hesabın sahip olduğu rol ROLE_USER'dir.
 
 
 
 
-
 ![](https://github.com/firatkaya1/library-management/blob/master/src/main/resources/static/assets/user.gif)
 
+Admin rolüne giriş yapıldığında ek olarak diğer kullanıcıları görebilir ve silme yetkisini kullanabilir. 
+
+![](https://github.com/firatkaya1/library-management/blob/master/src/main/resources/static/assets/admin.gif)
 
 
 
