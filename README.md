@@ -45,6 +45,9 @@ Arayüz tarafında HTML,CSS,JS,Bootstrap ve Thymeleaf kullanılmıştır. Arkapl
 
 Aşağıda projenin çalıştırıldıktan sonra 1 dakikalık bir kısa videosu bulunmaktadır. Burada Github hesabı kullanılarak giriş yapılmış, Yazar,yayınevi ve kitap eklenmiştir. Kullanılan hesabın sahip olduğu rol ROLE_USER'dir.
 
+Admin : admin@admin.com Şifre:12345
+User  : test@test.com   Şifre:12345 bilgilerini kullanarak sisteme giriş yapabilirsiniz.
+
 
 
 
@@ -54,21 +57,22 @@ Admin rolüne giriş yapıldığında ek olarak diğer kullanıcıları görebil
 
 ![](https://github.com/firatkaya1/library-management/blob/master/src/main/resources/static/assets/admin.gif)
 
+Aşağıda projenin ekran görüntülerini bulabilirsiniz. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+####Login Ekranı
+![](https://github.com/firatkaya1/library-management/blob/master/src/main/resources/static/assets/admin.gif)
+####Kayıt Ekranı
+https://github.com/firatkaya1/library-management/blob/master/src/main/resources/static/assets/register.png
+####Anasayfa Ekranı
+https://github.com/firatkaya1/library-management/blob/master/src/main/resources/static/assets/home.png
+####Yayınevi Sayfası, Güncelleme ve Ekleme Ekranları
+https://github.com/firatkaya1/library-management/blob/master/src/main/resources/static/assets/publisher.png
+https://github.com/firatkaya1/library-management/blob/master/src/main/resources/static/assets/publisheradd.png
+https://github.com/firatkaya1/library-management/blob/master/src/main/resources/static/assets/publisherupdate.png
+####Kitap Ekranı
+https://github.com/firatkaya1/library-management/blob/master/src/main/resources/static/assets/bookadd.png
+####Kayıtlı Diğer Kullanıcıların Bulunduğu Ekran
+https://github.com/firatkaya1/library-management/blob/master/src/main/resources/static/assets/users.png
 
 
 
