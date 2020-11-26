@@ -48,6 +48,8 @@ Aşağıda projenin çalıştırıldıktan sonra 1 dakikalık bir kısa videosu 
 
 
 
+![](https://github.com/firatkaya1/library-management/blob/master/src/main/resources/static/assets/user.gif)
+
 
 
 
