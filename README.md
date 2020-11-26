@@ -34,7 +34,7 @@ Projeyi indirdikten sonra projenin bulunduğu klasöre gidin.
 ```
 cd library-management
 ```
-Gerekli dosyaları yükledikten sonra projeyi çalıştırın. Proje https://localhost:8443 portunda açılacaktır.Authenticate işlemleri trafiğin HTTPS üzerinden   
+Gerekli dosyaları yükledikten sonra projeyi çalıştırın. Proje https://localhost:8443 portunda açılacaktır.Trafiğin HTTPS üzerinden
 ilerlemesi gerekmektedir. Proje için de hazır bir şekilde sertifika bulunmaktadır. Ek bir konfigürasyon yapılması gerekmemektedir.
 ```
 mvn install && mvn spring-boot:run
