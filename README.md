@@ -58,21 +58,23 @@ Admin rolüne giriş yapıldığında ek olarak diğer kullanıcıları görebil
 ![](https://github.com/firatkaya1/library-management/blob/master/src/main/resources/static/assets/admin.gif)
 
 Aşağıda projenin ekran görüntülerini bulabilirsiniz. 
+![alt text]()
 
-####Login Ekranı
+####Login Ekranı  
 ![](https://github.com/firatkaya1/library-management/blob/master/src/main/resources/static/assets/admin.gif)
-####Kayıt Ekranı
-https://github.com/firatkaya1/library-management/blob/master/src/main/resources/static/assets/register.png
-####Anasayfa Ekranı
-https://github.com/firatkaya1/library-management/blob/master/src/main/resources/static/assets/home.png
+####Kayıt Ekranı  
+![alt text](https://github.com/firatkaya1/library-management/blob/master/src/main/resources/static/assets/register.png)
+####Anasayfa Ekranı  
+![alt text](https://github.com/firatkaya1/library-management/blob/master/src/main/resources/static/assets/home.png)  
 ####Yayınevi Sayfası, Güncelleme ve Ekleme Ekranları
-https://github.com/firatkaya1/library-management/blob/master/src/main/resources/static/assets/publisher.png
-https://github.com/firatkaya1/library-management/blob/master/src/main/resources/static/assets/publisheradd.png
-https://github.com/firatkaya1/library-management/blob/master/src/main/resources/static/assets/publisherupdate.png
-####Kitap Ekranı
-https://github.com/firatkaya1/library-management/blob/master/src/main/resources/static/assets/bookadd.png
-####Kayıtlı Diğer Kullanıcıların Bulunduğu Ekran
-https://github.com/firatkaya1/library-management/blob/master/src/main/resources/static/assets/users.png
+![alt text](https://github.com/firatkaya1/library-management/blob/master/src/main/resources/static/assets/publisher.png)  
+![alt text](https://github.com/firatkaya1/library-management/blob/master/src/main/resources/static/assets/publisheradd.png)  
+![alt text](https://github.com/firatkaya1/library-management/blob/master/src/main/resources/static/assets/publisherupdate.png)  
+####Kitap Ekranı  
+![alt text](https://github.com/firatkaya1/library-management/blob/master/src/main/resources/static/assets/bookadd.png)  
+####Kayıtlı Diğer Kullanıcıların Bulunduğu Ekran  
+![alt text](https://github.com/firatkaya1/library-management/blob/master/src/main/resources/static/assets/users.png)  
+
 
 
 
