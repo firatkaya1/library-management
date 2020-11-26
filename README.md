@@ -58,10 +58,9 @@ Admin rolüne giriş yapıldığında ek olarak diğer kullanıcıları görebil
 ![](https://github.com/firatkaya1/library-management/blob/master/src/main/resources/static/assets/admin.gif)
 
 Aşağıda projenin ekran görüntülerini bulabilirsiniz. 
-![alt text]()
 
 ####Login Ekranı  
-![](https://github.com/firatkaya1/library-management/blob/master/src/main/resources/static/assets/admin.gif)
+![](https://github.com/firatkaya1/library-management/blob/master/src/main/resources/static/assets/Login.png)
 ####Kayıt Ekranı  
 ![alt text](https://github.com/firatkaya1/library-management/blob/master/src/main/resources/static/assets/register.png)
 ####Anasayfa Ekranı  
