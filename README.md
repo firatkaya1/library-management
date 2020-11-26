@@ -34,35 +34,45 @@ Projeyi indirdikten sonra projenin bulunduğu klasöre gidin.
 ```
 cd library-management
 ```
-Gerekli dosyaları yükledikten sonra projeyi çalıştırın. Proje https://localhost:8443 portunda açılacaktır.
+Gerekli dosyaları yükledikten sonra projeyi çalıştırın. Proje https://localhost:8443 portunda açılacaktır.Trafiğin HTTPS üzerinden
+ilerlemesi gerekmektedir. Proje için de hazır bir şekilde sertifika bulunmaktadır. Ek bir konfigürasyon yapılması gerekmemektedir.
 ```
 mvn install && mvn spring-boot:run
 ```
 ### Kullanılan Teknolojiler
 
-Arayüz tarafında HTML,CSS,JS,Bootstrap ve Thymeleaf kullanılmıştır. Arkaplan da ise Spring Boot, Spring Security, Spring JPA, MySQL kullanılmıştır.
+Arayüz tarafında HTML,CSS,JS,Bootstrap ve Thymeleaf kullanılmıştır. Arkaplan da ise Spring Boot, Spring Security, Spring JPA, MySQL kullanılmıştır.Database optimizasyonunu artırabilmek için HikariPool kullanılmıştır.
 
 Aşağıda projenin çalıştırıldıktan sonra 1 dakikalık bir kısa videosu bulunmaktadır. Burada Github hesabı kullanılarak giriş yapılmış, Yazar,yayınevi ve kitap eklenmiştir. Kullanılan hesabın sahip olduğu rol ROLE_USER'dir.
 
+Admin : admin@admin.com Şifre:12345
+User  : test@test.com   Şifre:12345 bilgilerini kullanarak sisteme giriş yapabilirsiniz.
 
 
 
 
+![](https://github.com/firatkaya1/library-management/blob/master/src/main/resources/static/assets/user.gif)
 
+Admin rolüne giriş yapıldığında ek olarak diğer kullanıcıları görebilir ve silme yetkisini kullanabilir. 
 
+![](https://github.com/firatkaya1/library-management/blob/master/src/main/resources/static/assets/admin.gif)
 
+Aşağıda projenin ekran görüntülerini bulabilirsiniz. 
 
-
-
-
-
-
-
-
-
-
-
-
+####Login Ekranı  
+![](https://github.com/firatkaya1/library-management/blob/master/src/main/resources/static/assets/Login.png)
+####Kayıt Ekranı  
+![alt text](https://github.com/firatkaya1/library-management/blob/master/src/main/resources/static/assets/register.png)
+####Anasayfa Ekranı  
+![alt text](https://github.com/firatkaya1/library-management/blob/master/src/main/resources/static/assets/home.png)  
+####Yayınevi Sayfası, Güncelleme ve Ekleme Ekranları
+![alt text](https://github.com/firatkaya1/library-management/blob/master/src/main/resources/static/assets/publisher.png)  
+![alt text](https://github.com/firatkaya1/library-management/blob/master/src/main/resources/static/assets/publisheradd.png)  
+![alt text](https://github.com/firatkaya1/library-management/blob/master/src/main/resources/static/assets/publisherupdate.png)  
+####Kitap Ekranı  
+![alt text](https://github.com/firatkaya1/library-management/blob/master/src/main/resources/static/assets/bookadd.png)  
+####Kayıtlı Diğer Kullanıcıların Bulunduğu Ekran  
+![alt text](https://github.com/firatkaya1/library-management/blob/master/src/main/resources/static/assets/users.png)  
 
 
 
